@@ -6,34 +6,54 @@
 	</head>
 	
 	<body>
-		<h1>Buy Your Way to a Better Education!</h1>
 
-		<p>
-			The rough economy, along with recent changes in University of Washington policy, now allow us to offer grades for money.  That's right!  All you need to get a 4.0 in this course is cold, hard, cash.
-		</p>
-		
-		<hr />
-		
-		<h2>Give Us Your Money</h2>
-		<dl>
-			<dt>Name</dt>
-			<dd>
-				???
-			</dd>
+		<form action="sucker.php" method="POST">
+			<h1>Buy Your Way to a Better Education!</h1>
+
+			<p>
+				The rough economy, along with recent changes in University of Washington policy, now allow us to offer grades for money.  That's right!  All you need to get a 4.0 in this course is cold, hard, cash.
+			</p>
 			
-			<dt>Section</dt>
-			<dd>
-				???
-			</dd>
-			
-			<dt>Credit Card</dt>
-			<dd>
-				???
-			</dd>
-		</dl>
-		
-		<div>
-			I am a giant sucker.
-		</div>
+			<hr>
+
+			<h2>Give Us Your Money</h2>
+
+			<dl>
+				<dt>Name</dt>
+				<dd>
+					<input id="name" type="text" name="name" placeholder="Your name..." >
+				</dd>
+					
+				<dt>Section</dt>
+				<dd>
+					<select name="section" >
+						<option value="">(Select a section)</option>
+						<option value="MA">MA</option>
+						<option value="MA">MB</option>
+						<option value="MA">MC</option>
+						<option value="MA">MD</option>
+						<option value="MA">ME</option>
+						<option value="MA">MF</option>
+						<option value="MA">MG</option>
+						<option value="MA">MH</option>
+					</select>
+				</dd>
+
+				<dt>Credit Card</dt>
+				<dd>
+					<input type="text" name="cardnumber" placeholder="Your credit card..." >
+					<br>
+					<input id="visa" type="radio" name="cardtype" value="visa" >
+					<label for="visa">"Visa"</label>
+					<input id="mastercard" type="radio" name="cardtype" value="mastercard" >
+					<label for="mastercard">"MasterCard"</label>
+				</dd>
+			</dl>
+
+			<div>
+				<input type="submit" value="I am a giant sucker."> 
+			</div>
+
+		</form>
 	</body>
 </html>
